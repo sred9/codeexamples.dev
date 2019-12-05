@@ -16,6 +16,12 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `UA-141254872-2`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
         siteUrl: URL,
@@ -117,13 +123,7 @@ module.exports = {
         ],
       }
     },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "UA-141254872-2",
-      },
-    }
-      `gatsby-plugin-netlify`,
+    `gatsby-plugin-netlify`,
     `gatsby-plugin-netlify-cache`,
   ],
 }

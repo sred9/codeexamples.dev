@@ -27,7 +27,6 @@ export default class PostListing extends Component {
             <div className="main-content">
                 <main>
                     {postList.map(post => {
-                        console.log(post)
                         return (
                             <div className="link-content" key={post.title}>
                                 <Link to={post.path} className="link">
