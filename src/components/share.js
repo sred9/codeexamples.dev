@@ -12,7 +12,7 @@ const Share = props => (
             props.pathname}`}
           target="blank"
         >
-          <img src={fbIcon} alt="facebook" className="shareme" />
+          <img src={fbIcon} alt="facebook" className="shareme" style={{ marginBottom: 0 }} />
         </a>
       </div>
       <div>
@@ -21,7 +21,7 @@ const Share = props => (
             props.pathname}&text=${props.title} by @saigowthamr`}
           target="blank"
         >
-          <img src={twitterIcon} alt="twitter" />
+          <img src={twitterIcon} alt="twitter" style={{ marginBottom: 0 }} />
         </a>
       </div>
     </div>
