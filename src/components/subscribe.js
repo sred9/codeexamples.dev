@@ -14,7 +14,7 @@ export default () => {
     return (
         <div style={formStyle}>
             <form
-                action="https://tinyletter.com/reactgo"
+                action="https://tinyletter.com/codeexamples"
                 method="post"
                 target="popupwindow"
                 onSubmit={() =>
