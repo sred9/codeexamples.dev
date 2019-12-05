@@ -117,7 +117,13 @@ module.exports = {
         ],
       }
     },
-    `gatsby-plugin-netlify`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-141254872-2",
+      },
+    }
+      `gatsby-plugin-netlify`,
     `gatsby-plugin-netlify-cache`,
   ],
 }

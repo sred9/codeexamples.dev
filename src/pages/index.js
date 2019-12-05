@@ -35,7 +35,7 @@ export default ({ data }) => {
                 </Link>
                 <div className="tags">
                   {node.frontmatter.tags.map(tag => (
-                    <Link to={`/tags/${tag}/`} key={tag} className="tag-style" >{tag}</Link>
+                    <Link to={`/tag/${tag}/`} key={tag} className="tag-style" >{tag}</Link>
                   ))}
                 </div>
               </div>
