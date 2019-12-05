@@ -1,0 +1,20 @@
+.footer{
+    background-color: var(--white,#ffff);
+    padding: 1rem;
+    padding-bottom: 2rem;
+}
+
+.footer a{
+    color: var(--dark,rgba(0, 0, 0, 0.705));
+}
+
+.footer-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.left-col a:not(:last-child){
+    margin-right: 1rem;
+}
