@@ -28,6 +28,18 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: 'Code Examples',
+        short_name: 'Reactgo',
+        start_url: '/',
+        background_color: '#f7f0eb',
+        theme_color: '#ffff',
+        display: 'standalone',
+        icon: 'src/images/android-chrome-512x512.png',
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,

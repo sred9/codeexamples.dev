@@ -37,7 +37,7 @@ export default class PostListing extends Component {
                                     </div>
                                 </Link>
                                 <div className="tags">
-                                    {post.tags.map(tag => (
+                                    {post.tags && post.tags.map(tag => (
                                         <Link to={`/tag/${tag}/`} key={tag} className="tag-style">{tag}</Link>
                                     ))}
                                 </div>
