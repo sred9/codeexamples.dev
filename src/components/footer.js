@@ -8,10 +8,11 @@ const Footer = ({ siteTitle }) => (
         <div className="center">
             <div className="footer-nav">
                 <div className="left-col">
-                    <Link to="/" className={"footer-title logostyle"}>
+                    <Link to="/">
                         {siteTitle}
                     </Link>
-                    <a href="https://twitter.com/saigowthamr" className={"footer-title logostyle"}> @saigowthamr</a>
+                    <a href="https://twitter.com/saigowthamr"> @saigowthamr</a>
+                    <a href="https://reactgo.com">reactgo.com</a>
                 </div>
 
                 <div className="right-colo">

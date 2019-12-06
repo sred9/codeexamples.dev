@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Img from 'gatsby-image'
 import { Link } from 'gatsby';
 import Subscribe from './subscribe';
 import Share from './share';
@@ -48,7 +47,7 @@ class PostMarkdown extends Component {
                             <h1 className="title" >{title}</h1>
                             <div className="post-meta">
                                 <div className="">
-                                    {tags.map(tag => (
+                                    {tags && tags.map(tag => (
                                         <strong key={tag}><Link to={`/tag/${tag}/`} className="tag-style">{tag}</Link></strong>
                                     ))}
                                 </div>
