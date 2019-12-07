@@ -35,7 +35,7 @@ exports.createPages = ({ actions, graphql }) => {
             const tagSet = new Set()
             const blogTemplate = path.resolve('./src/templates/post.js');
             const tagTemplate = path.resolve('./src/templates/tags.js')
-
+            console.log(result.data.allMarkdownRemark.edges.length)
             result.data.allMarkdownRemark.edges.forEach(({ node }) => {
                 if (node.frontmatter.tags) {
                     node.frontmatter.tags.forEach(tag => {

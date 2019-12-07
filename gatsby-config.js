@@ -8,7 +8,7 @@ const URL =
 module.exports = {
   siteMetadata: {
     title: `Code Examples`,
-    description: `Examples about various programming languages like JavaScript, Python, Angular, React, Vue.js etc.`,
+    description: `Examples about various programming languages like JavaScript, Python, Bash, Rust, Angular, React, Vue.js etc.`,
     author: `@saigowthamr`,
     url: URL,
     siteUrl: URL

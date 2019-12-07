@@ -1,7 +1,7 @@
 ---
 title: How to pass props to {this.props.children}
 date: "2019-12-01"
-tags: ['react']
+tags: ['react','props']
 template: post
 ---
 

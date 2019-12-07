@@ -34,7 +34,7 @@ export default ({ data }) => {
                   </div>
                 </Link>
                 <div className="tags">
-                  {node.frontmatter.tags.map(tag => (
+                  {node.frontmatter.tags && node.frontmatter.tags.map(tag => (
                     <Link to={`/tag/${tag}/`} key={tag} className="tag-style" >{tag}</Link>
                   ))}
                 </div>
@@ -59,13 +59,13 @@ export const query = graphql`
       edges {
         node {
         id
-          fields{
-        slug
-      }
+        fields{
+           slug
+        }
       frontmatter {
         title
-            date(formatString: "MMM DD")
-      tags
+        date(formatString: "MMM DD")
+        tags
     }
     excerpt
   }
