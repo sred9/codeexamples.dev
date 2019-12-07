@@ -1,7 +1,7 @@
 ---
 title: React pass parameter into onClick method
 date: "2019-12-07"
-tags: ['react']
+tags: ['react','events']
 template: post
 ---
 

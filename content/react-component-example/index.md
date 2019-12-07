@@ -1,7 +1,7 @@
 ---
 title: React Component Example
 date: "2019-12-06"
-tags: ['react']
+tags: ['react','component']
 template: post
 ---
 

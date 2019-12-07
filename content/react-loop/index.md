@@ -1,7 +1,7 @@
 ---
 title: How to Loop inside React JSX
 date: "2019-12-06"
-tags: ['react']
+tags: ['react','loops']
 template: post
 ---
 

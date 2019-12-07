@@ -1,7 +1,7 @@
 ---
 title: React Hello World Example
 date: "2019-12-06"
-tags: ['react']
+tags: ['react','helloworld']
 template: post
 ---
 
