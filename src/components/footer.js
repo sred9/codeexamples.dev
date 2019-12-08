@@ -12,7 +12,7 @@ const Footer = ({ siteTitle }) => (
                         {siteTitle}
                     </Link>
                     <a href="https://twitter.com/saigowthamr"> @saigowthamr</a>
-                    <a href="https://reactgo.com">reactgo.com</a>
+                    <a href="https://reactgo.com">JavaScript Tutorials</a>
                 </div>
 
                 <div className="right-colo">
