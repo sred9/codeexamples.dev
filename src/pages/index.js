@@ -7,6 +7,7 @@ import Subscribe from "../components/subscribe"
 import Footer from "../components/footer"
 import MetaPost from '../components/MetaPost'
 import logo from '../images/android-chrome-512x512.png'
+import kebabCase from 'lodash/kebabCase';
 
 export default ({ data }) => {
   const url = data.site.siteMetadata.url
@@ -35,7 +36,7 @@ export default ({ data }) => {
                 </Link>
                 <div className="tags">
                   {node.frontmatter.tags && node.frontmatter.tags.map(tag => (
-                    <Link to={`/tag/${tag}/`} key={tag} className="tag-style" >{tag}</Link>
+                    <Link to={`/tag/${kebabCase(tag)}/`} key={tag} className="tag-style" >{tag}</Link>
                   ))}
                 </div>
               </div>

@@ -6,7 +6,6 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 import MetaPost from '../components/MetaPost';
 import logo from '../images/android-chrome-512x512.png'
-
 import '../components/centeral-styles.css';
 
 

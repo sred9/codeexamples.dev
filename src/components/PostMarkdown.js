@@ -3,6 +3,8 @@ import { Link } from 'gatsby';
 import Subscribe from './subscribe';
 import Share from './share';
 import MetaPost from './MetaPost';
+import kebabCase from 'lodash/kebabCase';
+
 
 class PostMarkdown extends Component {
     state = {
@@ -48,7 +50,7 @@ class PostMarkdown extends Component {
                             <div className="post-meta">
                                 <div className="">
                                     {tags && tags.map(tag => (
-                                        <strong key={tag}><Link to={`/tag/${tag}/`} className="tag-style">{tag}</Link></strong>
+                                        <strong key={tag}><Link to={`/tag/${kebabCase(tag)}/`} className="tag-style">{tag}</Link></strong>
                                     ))}
                                 </div>
                                 {/* <strong className="readtime">{post.timeToRead && post.timeToRead + "min read"}</strong> */}

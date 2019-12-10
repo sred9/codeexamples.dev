@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
 import Subscribe from './subscribe'
-
+import kebabCase from 'lodash/kebabCase';
 
 export default class PostListing extends Component {
     getPostList() {
@@ -38,7 +38,7 @@ export default class PostListing extends Component {
                                 </Link>
                                 <div className="tags">
                                     {post.tags && post.tags.map(tag => (
-                                        <Link to={`/tag/${tag}/`} key={tag} className="tag-style">{tag}</Link>
+                                        <Link to={`/tag/${kebabCase(tag)}/`} key={tag} className="tag-style">{tag}</Link>
                                     ))}
                                 </div>
                             </div>
