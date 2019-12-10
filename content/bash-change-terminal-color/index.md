@@ -32,7 +32,7 @@ Num  Colour    #define         R G B
 
 ## Changing background color
 
-Similary, you can also background color of the echo text by using `setab`.
+Similary, you can also change background color of the echo text by using `setab`.
 
 The following example is printing `red background` with `yellow` text.
 
