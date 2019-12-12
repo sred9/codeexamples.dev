@@ -233,3 +233,13 @@ pre[class*="language-"] {
   padding-right: 0.8em;
 }
 
+
+
+/* [data-language]::before {
+	content: attr(data-language);
+	float: right;
+	color: #ffd700;
+	background-color: transparent;
+	font-size: 14px;
+	margin-top: 0;
+} */
