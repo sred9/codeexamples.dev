@@ -7,7 +7,7 @@ template: post
 
 To remove the last character from a string we need to use the `removeLast()` method in swift.
 
-Here is an example that removes the last character` from a string.
+Here is an example that removes the last character `d` from a string.
 
 ```swift
 var str = "Fun World"
