@@ -10,7 +10,7 @@ import logo from '../images/android-chrome-512x512.png'
 import kebabCase from 'lodash/kebabCase';
 
 export default ({ data }) => {
-  const url = data.site.siteMetadata.url
+  const url = data.site.siteMetadata.url;
   return (
     <Layout>
       <Header />
