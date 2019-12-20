@@ -1,13 +1,13 @@
 ---
-title: How to add leading zeroes to a Python String
+title: How to add leading zeros to a Python String
 date: "2019-12-20"
 tags: ['python','string','zero-padding']
 template: post
 ---
 
-To add leading zeroes to a python string, we can use the `zfill()` method.
+To add leading zeros to a python string, we can use the `zfill()` method.
 
-Here is an example that adds zeroes to the left side of a numeric string `5`.
+Here is an example that adds zeros to the left side of a numeric string `5`.
 
 ```python
 num = "5"
