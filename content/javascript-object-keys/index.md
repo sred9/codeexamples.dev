@@ -5,7 +5,7 @@ tags: ['javascript','object','keys','es6']
 template: post
 ---
 
-To get the number of keys we need to used `Object.keys()` method in JavaScript.
+To get the number of keys we can use the `Object.keys()` method in JavaScript.
 
 Example:
 

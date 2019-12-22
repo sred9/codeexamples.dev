@@ -1,7 +1,7 @@
 ---
 title: How to convert an InputStream to a string in Java
 date: "2019-12-18"
-tags: ['java','stream','input stream','io','string']
+tags: ['java','convert','inputstream','string']
 template: post
 ---
 
