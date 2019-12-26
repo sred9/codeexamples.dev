@@ -23,6 +23,3 @@ b'How are you'
 ```
 
 >str.encode() : Returns an encoded version of the string as a bytes object.
-
-
-[best programming laptops](https://dev.to/saigowthamr/best-programming-laptops-in-2020-for-coders-and-students-2hh0)

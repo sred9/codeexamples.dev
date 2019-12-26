@@ -70,6 +70,7 @@ class PostMarkdown extends Component {
                             />
                         </article>
                         <hr />
+                        <a href="https://reactgo.com/best-programming-laptops/">Best Programming laptops</a>
                     </main>
                     <aside className="aside-box">
                         <Subscribe />
