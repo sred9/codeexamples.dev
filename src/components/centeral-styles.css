@@ -140,7 +140,17 @@
     border-radius: 3px;
     position: relative;
     margin-bottom: 2rem;
+}
 
+.bread-crumbs{
+    font-size: 14px;
+    color: #6f7479;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+.bread-crumbs a{
+  color: #6f7479;
 }
 
 .similar-articles{
