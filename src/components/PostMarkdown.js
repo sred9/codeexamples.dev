@@ -47,6 +47,8 @@ class PostMarkdown extends Component {
                                 </strong>
                             </div>
                             <h1 className="title" >{title}</h1>
+                            <span className="bread-crumbs"><Link to="/">Home</Link> {" » "}<Link
+                                to={`/tag/${kebabCase(tags[0])}/`} >{tags[0]}</Link>{" » "}{title}</span>
                             <div className="post-meta">
                                 <div className="">
                                     {tags && tags.map(tag => (
