@@ -21,6 +21,6 @@ print(array)
 
 Which returns the array of 4 characters.
 
-```output
+```swift
 ["A", "B", "C", "D"]
 ```
