@@ -1,11 +1,11 @@
 ---
-title: How to remove alphanumeric characters from a string in JavaScript
+title: How to remove non-numeric characters from a string in JavaScript
 date: "2020-01-03"
-tags: ['javascript','remove','alphanumeric','characters','string']
+tags: ['javascript','remove','numeric','characters','string']
 template: post
 ---
 
-To remove the alpha-numeric characters from a string we can use the `replace` method by passing the
+To remove the all non-numeric characters from a string we can use the `replace` method by passing the
 `/\D/g` regex as a first argument and empty string (`''`) as a second argument in JavaScript.
 
 Here is an example:
