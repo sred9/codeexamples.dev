@@ -7,7 +7,7 @@ template: post
 
 In python, we can use the `join()` method to concatenate a list of strings into a single string.
 
-Here is an example that concatenates the `user` list into a single string.
+Here is an example that concatenates the `users` list into a single string.
 
 ```python
 users = ['jim','pop','king']
