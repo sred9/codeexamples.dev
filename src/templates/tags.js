@@ -39,7 +39,6 @@ export default class TagTemplate extends Component {
 export const pageQuery = graphql`
   query TagPage($tag: String) {
     allMarkdownRemark(
-      limit: 1000
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { tags: { in: [$tag] } } }
     ) {

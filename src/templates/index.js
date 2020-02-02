@@ -8,9 +8,12 @@ import Footer from "../components/footer"
 import MetaPost from '../components/MetaPost'
 import logo from '../images/android-chrome-512x512.png'
 import kebabCase from 'lodash/kebabCase';
+import Pagination from '../components/Pagination';
 
-export default ({ data }) => {
+export default ({ data, pageContext }) => {
   const url = data.site.siteMetadata.url;
+  // const pageContext = this.props.pageContext;
+
   return (
     <Layout>
       <Header />
@@ -42,6 +45,7 @@ export default ({ data }) => {
               </div>
             ))}
 
+            <Pagination pageContext={pageContext} />
           </main>
           <aside>
             <Subscribe />
@@ -54,8 +58,12 @@ export default ({ data }) => {
 }
 
 export const query = graphql`
-  query {
-        allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+  query AllPosts($skip: Int!, $limit: Int!) {
+        allMarkdownRemark(
+          sort: { fields: [frontmatter___date], order: DESC }
+          skip: $skip
+          limit: $limit
+          ) {
         totalCount
       edges {
         node {
