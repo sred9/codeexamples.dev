@@ -1,6 +1,7 @@
 const path = require("path")
 const { createFilePath, createFileNode } = require(`gatsby-source-filesystem`)
 const _ = require('lodash');
+const { paginate } = require('gatsby-awesome-pagination');
 
 exports.createPages = ({ actions, graphql }) => {
     const { createPage } = actions
@@ -36,12 +37,30 @@ exports.createPages = ({ actions, graphql }) => {
             const blogTemplate = path.resolve('./src/templates/post.js');
             const tagTemplate = path.resolve('./src/templates/tags.js')
             console.log(result.data.allMarkdownRemark.edges.length)
+
+            const allPosts = result.data.allMarkdownRemark.edges
+
+            paginate({
+                createPage, // The Gatsby `createPage` function
+                items: allPosts, // An array of objects
+                itemsPerPage: 15, // How many items you want per page
+                pathPrefix: ({ pageNumber }) => {
+                    if (pageNumber === 0) {
+                        return `/`
+                    } else {
+                        return `/page`
+                    }
+                },
+                component: path.resolve('src/templates/index.js'), // Just like `createPage()`
+            })
+
             result.data.allMarkdownRemark.edges.forEach(({ node }) => {
                 if (node.frontmatter.tags) {
                     node.frontmatter.tags.forEach(tag => {
                         tagSet.add(tag)
                     })
                 }
+
                 if (node.frontmatter.template === 'post') {
                     createPage({
                         path: node.fields.slug,
@@ -54,13 +73,14 @@ exports.createPages = ({ actions, graphql }) => {
                 }
             })
 
-            const tagList = Array.from(tagSet)
+            const tagList = Array.from(tagSet);
+
             tagList.forEach(tag => {
                 createPage({
                     path: `/tag/${_.kebabCase(tag)}/`,
                     component: tagTemplate,
                     context: {
-                        tag,
+                        tag
                     },
                 })
             })
