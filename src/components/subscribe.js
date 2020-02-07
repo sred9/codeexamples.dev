@@ -25,7 +25,7 @@ export default () => {
                 }
                 className={"embeddable-buttondown-form "}
             >
-                <h4>Get our latest updates</h4>
+                <h4>Get our latest Examples</h4>
 
                 <div>
                     <label htmlFor="bd-email" className="label">
