@@ -69,8 +69,6 @@ class PostMarkdown extends Component {
                                 pathname={pathname}
                             />
                         </article>
-                        <hr />
-                        <a href="https://reactgo.com/best-web-development-courses/">Best Web Development courses</a>
                     </main>
                     <aside className="aside-box">
                         <Subscribe />
