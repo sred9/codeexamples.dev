@@ -68,6 +68,7 @@ class PostMarkdown extends Component {
                                 url={url}
                                 pathname={pathname}
                             />
+                            <hr />
                         </article>
                     </main>
                     <aside className="aside-box">
