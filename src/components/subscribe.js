@@ -7,7 +7,8 @@ const formStyle = {
     paddingBottom: .01,
     background: "#fff",
     boxShadow: "0px -1px 6px 0px rgb(136, 136, 136)",
-    borderBottom: "6px solid #ccc"
+    borderBottom: "6px solid #ccc",
+    borderRadius: "15px"
 }
 
 export default () => {
